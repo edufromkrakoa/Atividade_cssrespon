@@ -1,0 +1,45 @@
+#store {
+    background-color: #02CA81;
+    padding: 50px 0;
+}
+
+.store-header {
+    text-align: center;
+    font-size: 45px;
+    color: #1D0E03;
+    font-family: 'Sen', sans-serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+.lojagrid-capa {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0px;
+    justify-content: center;
+}
+
+.lojagrid-capa li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.lojagrid-capa img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.lojagrid-capa p {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #1D0E03;
+}
+
+.lojagrid-capa span {
+    color: #555;
+    font-size: 16px;
+}

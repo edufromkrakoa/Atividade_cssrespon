@@ -1,0 +1,45 @@
+#aboutus {
+    background-color: #02CA81;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.aboutus-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus-body .titulo {
+    font-size: 44px;
+    font-family: 'Sen', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: #1D0E03;
+    font-weight: 200;
+}
+
+.aboutus-body img {
+    width: 524px;
+    border-radius: 500px 500px 0 0;
+    object-fit: cover;
+}
+
+#aboutus h2 {
+    font-size: 17px;
+    font-family: 'Sen', sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    color: #1D0E03;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#aboutus h5 {
+    font-size: 33px;
+    font-family: 'Sen', sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(-20px);
+}

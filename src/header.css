@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Questrial, Sen, sans-serif;
+    color: #014B3F;
+}
+
+header .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 980;
+    height: 176;
+    padding: 8px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    background-color: #02CA81;
+    font-size: 16px;
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    justify-content: space-around;
+    padding: 8px;
+    height: 45px;
+}
+
+.header-top p {
+    margin: 0;
+    line-height: 24px;
+}
+
+.header-top p.contatos {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 20px;
+}
+
+.header-top img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 4px ;
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+    background-color: #FF5E1A;
+    font-family: 'Sen', sans-serif;
+    font-size: 24px;
+    padding: 0 200px 0 200px;
+}
+
+.search-container {
+    position: relative;
+    width: 380px;
+}
+
+#pesquisa {
+    width: 100%;
+    height: 43px;
+    padding: 5px 10px 5px 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-actions button {
+    background: transparent; 
+    border: none;            
+    outline: none;           
+    cursor: pointer;         
+}
+
+.header-middle .header-actions img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 4px ;
+}
+
+.header-bottom {
+    background-color: #FBD3C0;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    display: flex;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 30px;
+}
+
+.menu li {
+    position: relative; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: #014B3F;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #014B3F; /* Cor ao passar o mouse */
+}
+
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FBD3C0;
+    min-width: 150px;
+    padding: 5px 0;
+    display: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    z-index: 1000;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu a {
+    padding: 8px 15px;
+    display: block;
+    color: #014B3F;
+}
+
+/* Mostra o submenu ao passar o mouse */
+.menu .dropdown:hover .submenu {
+    display: block;
+}
+

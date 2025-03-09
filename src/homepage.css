@@ -1,0 +1,86 @@
+.home-page {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.visit-card {
+    position: relative; /* Garante que os textos fiquem sobre a imagem */
+}
+
+#carousel-imagens img {
+    width: 100%;
+    height: 655px;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-frente1, .texto-frente2, .texto-frente3{
+    position: absolute;
+    font-family: 'Forum', sans-serif;   
+    left: 50%; /* Ajuste a posição horizontal */
+    color: #fff;
+    transform: translate( -50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.texto-frente1 {
+    top: 40%; /* Ajusta a posição vertical do texto */ 
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.texto-frente2 {
+    top: 50%;
+    font-size: 80px;
+}
+
+.texto-frente3 {
+    top: 62%;
+    font-size: 28px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #FBD3C0;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cell img {
+    width: 50px;
+    height: auto;
+    
+}
+
+.texto {
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    padding-right: 90px;
+}
+
+.cell h6 {
+    font-size: 20px;
+    font-weight: 600;
+    columns: #1D0E03;
+    margin: 5px 0;
+}
+
+.cell p {
+    font-size: 14px;
+    color: #56483E;
+    margin: 0;
+}
