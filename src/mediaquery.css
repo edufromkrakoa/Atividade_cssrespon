@@ -1,7 +1,84 @@
-@media screen (max-width: 640px){
+@media (min-width: 1024px) {
     
 }
 
+@media (min-width: 641px) and (max-width: 1023px) {
+    body, html {
+        width: 100%;
+    }
+
+    header .container {
+        width: 100%;
+    }
+
+    .header-midle{
+        width: 100%; /* Ocupa toda a largura */
+        padding: 0 10px;
+    }
+
+    .nomeloja{
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    * {
+        width: auto;
+        height: auto;
+    }
+
+    .header-top{
+        display: flex;
+        height: 40px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .header-top img {
+        height: 20px;
+        width: 20px;
+        vertical-align: middle;
+        margin-left: 3px ;
+    }    
+
+    .header-middle {
+        height: 65px;
+        font-size: 20px;
+        padding: 0 50px 0 50px;
+    }   
+
+    .search-container {
+        position: relative;
+        width: 380px;
+    }
+
+    .header-middle .header-actions img {
+        margin-left: 10px;
+    }
+    
+    .texto-frente1, .texto-frente2, .texto-frente3 {
+        position: absolute;
+        font-family: 'Forum', sans-serif;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        
+    }
+
+    .texto-frente1 {
+        top: 30%;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .texto-frente2 {
+        top: 40%;
+        font-size: 100px;
+        white-space: nowrap; 
+    }
+    
+}
     
 
     
