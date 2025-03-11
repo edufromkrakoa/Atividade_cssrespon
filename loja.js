@@ -1,52 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona os contêineres das seções
-    const homePage = document.querySelector('.home-page');
-    const aboutusSection = document.getElementById('aboutus');
-    const storeSection = document.getElementById('store');
-    
-    // Exibe a homepage por padrão e oculta as demais
-    if (homePage) homePage.style.display = 'block';
-    if (aboutusSection) aboutusSection.style.display = 'none';
-    if (storeSection) storeSection.style.display = 'none';
-    
-    // Função para alternar a exibição
-    function switchSection(sectionToShow) {
-        // Oculta todas as seções
-        if (homePage) homePage.style.display = 'none';
-        if (aboutusSection) aboutusSection.style.display = 'none';
-        if (storeSection) storeSection.style.display = 'none';
-        
-        // Exibe a seção desejada (caso exista)
-        if (sectionToShow) {
-            sectionToShow.style.display = 'block';
-            sectionToShow.scrollIntoView({ behavior: "smooth" });
-        }
+    const store = document.getElementById("store");
+
+    if (!store) {
+        console.error("Erro: A seção #store não foi encontrada no DOM!");
+        return;
     }
-    
-    // Evento para o link "Página Inicial"
-    const homeLink = document.getElementById("homeLink");
-    if (homeLink) {
-      homeLink.addEventListener("click", function(event) {
-          event.preventDefault();
-          switchSection(homePage);
-      });
-    }
-    
-    // Evento para o link "Sobre"
-    const aboutLink = document.getElementById("aboutLink");
-    if (aboutLink) {
-      aboutLink.addEventListener("click", function(event) {
-          event.preventDefault();
-          switchSection(aboutusSection);
-      });
-    }
-    
-    // Evento para o link "Loja"
-    const storeLink = document.getElementById("storeLink");
-    if (storeLink) {
-      storeLink.addEventListener("click", function(event) {
-          event.preventDefault();
-          switchSection(storeSection);
-      });
+
+    // Remove qualquer CSS que possa estar escondendo a seção
+    store.style.display = "block";
+    store.style.visibility = "visible";
+    store.style.height = "auto";
+
+    // Verifica se a altura está correta
+    const height = store.offsetHeight;
+    if (height === 0) {
+        console.warn("A altura de #store é 0! Aplicando altura manual...");
+        store.style.minHeight = "200px";
+    } else {
+        console.log("A altura da seção #store é:", height + "px");
     }
 });

@@ -9,11 +9,23 @@
     position: relative; /* Garante que os textos fiquem sobre a imagem */
 }
 
+.home-page,
+#aboutus,
+.store-body {
+  display: none;
+}
+
+.home-page.active,
+#aboutus.active,
+.store-body.active {
+  display: block;
+}
+
 #carousel-imagens img {
     width: 100%;
     height: 655px;
     object-fit: cover;
-    display: block;
+    display: relative;
 }
 
 .texto-frente1, .texto-frente2, .texto-frente3{

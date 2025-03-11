@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./src/homepage.css">
     <link rel="stylesheet" href="./src/aboutus.css">
     <link rel="stylesheet" href="./src/store.css">
+    <link rel="stylesheet" href="./src/footer.css">
+    <link rel="stylesheet" href="./src/mediaquery.css">
 </head>
 <body>
     <header class="container">
@@ -48,10 +50,10 @@
         </div>          
         <nav class="header-bottom">
             <ul class="menu">
-                <li><a href="#" id="homeLink">Página Inicial</a></li>
-                <li><a href="#aboutus" id="aboutLink">Sobre</a></li>
+                <li><a href="#home-page">Página Inicial</a></li>
+                <li><a href="#aboutus">Sobre</a></li>
                 <li class="dropdown">
-                    <a href="#" id="storeLink">Loja</a>
+                    <a href="#store">Loja</a>
                     <ul class="submenu">
                         <li><a href="#">Biquínis</a></li>
                         <li><a href="#">Maiôs</a></li>
@@ -61,7 +63,7 @@
             </ul>
         </nav>   
     </header>
-    <div class="home-page">
+    <div id="home-page">
         <div class="visit-card">
             <div id="carousel-container">
                 <div id="carousel-imagens">
@@ -114,59 +116,101 @@
         <h5>Veja a coleção</h5>
     </section>
     <section id="store">
-        <div class="section-content">
-            <div class="store-body">
-                <h2 class="store-header">Lançamentos que você vai amar</h2>
-                <div class="lojagrid-capa">
-                    <li>
-                        <img src="./src/Imagens/Produtos/1 capa.avif">
-                        <p>Tamarinho</p>
-                        <span>R$ 109,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/2 capa.avif">
-                        <p>Era Uma Vez</p>
-                        <span>R$ 99,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/3 capa.avif">
-                        <p>Tara</p>
-                        <span>R$ 89,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/4 capa.avif">
-                        <p>Bolsa de Palha</p>
-                        <span>R$ 65,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/5 capa.avif">
-                        <p>Logan</p>
-                        <span>R$ 119,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/6 capa.avif">
-                        <p>Ao Mar</p>
-                        <span>R$ 89,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/7 capa.avif">
-                        <p>Tote Rede</p>
-                        <span>R$ 40,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/8 capa.avif">
-                        <p>Lulo</p>
-                        <span>R$ 109,00</span>
-                    </li>
-                    <li>
-                        <img src="./src/Imagens/Produtos/9 capa.avif">
-                        <p>Oi</p>
-                        <span>R$ 99,00</span>
-                    </li>
-                </div>
+        <h2 class="store-header">Lançamentos que você vai amar</h2>
+            <ul class="lojagrid-capa">
+                <li>
+                    <img src="./src/Imagens/Produtos/1 capa.avif">
+                    <p>Tamarinho</p>
+                    <span>R$ 109,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/2 capa.avif">
+                    <p>Era Uma Vez</p>
+                    <span>R$ 99,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/3 capa.avif">
+                    <p>Tara</p>
+                    <span>R$ 89,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/4 capa.avif">
+                    <p>Bolsa de Palha</p>
+                    <span>R$ 65,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/5 capa.avif">
+                    <p>Logan</p>
+                    <span>R$ 119,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/6 capa.avif">
+                    <p>Ao Mar</p>
+                    <span>R$ 89,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/7 capa.avif">
+                    <p>Tote Rede</p>
+                    <span>R$ 40,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/8 capa.avif">
+                    <p>Lulo</p>
+                    <span>R$ 109,00</span>
+                </li>
+                <li>
+                    <img src="./src/Imagens/Produtos/9 capa.avif">
+                    <p>Oi</p>
+                    <span>R$ 99,00</span>
+                </li>
+            </ul>
+    </section>
+    <footer class="footer1">
+        <h2 class="footer-title1">Saiba tudo sobre as melhores novidades e promoções</h2>
+        <p class="footer-discount">15% OFF NA SUA</p> 
+        <p class="footer-discount">PRIMEIRA COMPRA</p>    
+        <form class="footer-form">
+            <input type="email" id="email" class="footer-input" placeholder="Insira seu email aqui *" required>
+            <button type="submit" class="footer-button">Enviar</button>
+        </form>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-column">
+            <p class="footer-title">LIDO BRANCO</p>
+            <ul>
+                <li><p>Loja</p></li>
+                <li><p>Campanha</p></li>
+                <li><p>Sobre Nós</p></li>
+                <li><p>Contato</p></li>
+                <li><p>Guia de Tamanhos</p></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><p>Envio e Devoluções</p></li>
+                <li><p>Política da Loja</p></li>
+                <li><p>Métodos de Pagamento</p></li>
+                <li><p>FAQ</p></li>
+            </ul>
+        </div>
+        <div class="footer-column security">
+            <p class="footer-subtitle">Segurança</p>
+            <i class="fas fa-shield-alt"></i>
+            <p>Ambiente 100% Seguro</p>
+            <p>Sua informação é protegida pela criptografia SSL 256-bit.</p>
+            <p class="footer-subtitle">Métodos de pagamentos aceitos</p>
+            <div class="payment-methods">
+                <img src="./src/Imagens/icons/bandeiras-cartoes-credito.webp" alt="formas de pagamento">
             </div>
         </div>
-    </section>
+        <div class="footer-column">
+            <p class="footer-subtitle">Redes sociais</p>
+            <ul class="social-icons">
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+            </ul>
+        </div>
+    </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

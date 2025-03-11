@@ -1,6 +1,8 @@
 #aboutus {
     background-color: #02CA81;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 50px 20px;
 }
 
@@ -17,6 +19,7 @@
     margin-top: 10px;
     color: #1D0E03;
     font-weight: 200;
+    text-align: center;
 }
 
 .aboutus-body img {
@@ -43,3 +46,9 @@
     text-align: center;
     transform: translateY(-20px);
 }
+
+#aboutus h5:hover {
+    transform: translateY(-25px);
+    transition: transform 0.3s ease-in-out;
+}
+
