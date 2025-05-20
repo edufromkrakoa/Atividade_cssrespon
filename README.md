@@ -5,7 +5,7 @@ Projeto desenvolvido como parte do Módulo 11 do curso de Desenvolvedor Full Sta
 
 - Layout 100% responsivo com breakpoints estratégicos
 - Estrutura semântica acessível
-- 
+ 
 ## 🛠️ Tecnologias Utilizadas
 
 | Categoria       | Tecnologias/Ferramentas       | Aplicação no Projeto          |
